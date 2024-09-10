@@ -2,19 +2,18 @@
   <!-- <img src="logo.svg" width="200px" align="center" alt="Zod logo" /> -->
   <h1 align="center">VOL</h1>
   <p align="center">
-    ✨ <a href="https://github.com/duongductrong/ts-uni">vol.danielll.dev</a> ✨
+    ✨ <a href="https://github.com/duongductrong/vol">vol.danielll.dev</a> ✨
     <br/>
     Experimental UI blocks
   </p>
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="./src/assets/docs/demo.gif" />
-</p>
+</p> -->
 
 <p align="center">
   <a href="https://github.com/duongductrong" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-@duongductrong-4BBAAB.svg" alt="Created by Dan"></a>
-  <a href="https://www.npmjs.com/package/ts-uni" rel="nofollow"><img src="https://img.shields.io/github/stars/duongductrong/ts-uni" alt="stars"></a>
 </p>
 
 ## Getting Started
