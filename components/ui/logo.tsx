@@ -8,7 +8,7 @@ const Logo = ({ className, ...props }: LogoProps) => {
     <div
       {...props}
       className={cn(
-        "size-6 bg-gradient-to-tl from-blue-500 from-20% via-purple-800 to-yellow-500 rounded-full",
+        "size-6 bg-gradient-to-tr from-[#192A5E] via-[#9FADD0] to-[#C04149] rounded-full",
         className
       )}
     />
