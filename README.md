@@ -1,26 +1,40 @@
-# vol
+<p align="center">
+  <!-- <img src="logo.svg" width="200px" align="center" alt="Zod logo" /> -->
+  <h1 align="center">VOL</h1>
+  <p align="center">
+    ✨ <a href="https://github.com/duongductrong/ts-uni">vol.danielll.dev</a> ✨
+    <br/>
+    Experimental UI blocks
+  </p>
+</p>
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+<p align="center">
+  <img src="./src/assets/docs/demo.gif" />
+</p>
 
-Run development server:
+<p align="center">
+  <a href="https://github.com/duongductrong" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-@duongductrong-4BBAAB.svg" alt="Created by Dan"></a>
+  <a href="https://www.npmjs.com/package/ts-uni" rel="nofollow"><img src="https://img.shields.io/github/stars/duongductrong/ts-uni" alt="stars"></a>
+</p>
+
+## Getting Started
+
+First, run the development server:
 
 ```bash
 npm run dev
 # or
-pnpm dev
-# or
 yarn dev
+# or
+pnpm dev
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
+Any contributions are welcome. Please read the [contribution guide](./CONTRIBUTING.md) before you start.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.vercel.app) - learn about Fumadocs
+## License
+
+MIT
