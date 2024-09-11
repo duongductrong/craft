@@ -1,19 +1,63 @@
-import Link from 'next/link';
+"use client";
+
+import { cn } from "@/lib/tw";
+import { motion } from "framer-motion";
+import Link from "fumadocs-core/link";
+import { Protest_Guerrilla } from "next/font/google";
+
+const protestGuerrilla = Protest_Guerrilla({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export default function HomePage() {
   return (
-    <main className="flex h-screen flex-col justify-center text-center">
-      <h1 className="mb-4 text-2xl font-bold">Hello World</h1>
-      <p className="text-fd-muted-foreground">
-        You can open{' '}
+    <main className="relative flex h-[calc(100vh-3.5rem)] flex-col justify-center text-center bg-black per overflow-hidden">
+      <div
+        className={cn(
+          "absolute -top-14 left-0 z-10",
+          "w-full h-[400px] bg-[size:80px_80px]",
+          "[transform:perspective(300px)_rotateX(-50deg)]",
+          "bg-[linear-gradient(90deg,#222_1px,transparent_0),linear-gradient(180deg,#222_1px,transparent_0)]",
+          "border-b border-[#222]"
+        )}
+      />
+      <motion.div
+        className="relative z-20"
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{
+          opacity: 1,
+          scale: 1,
+          transition: { duration: 0.8, stiffness: 200 },
+        }}
+      >
+        <h1
+          className={cn(
+            protestGuerrilla.className,
+            "text-[10vw] lg:text-[6.5vw] "
+          )}
+        >
+          {`craft/daniel`}
+        </h1>
+        <p className={cn("font-sans", "text-sm lg:text-base mb-4")}>
+          "Crafting is not just about making things, it's about making meaning."
+        </p>
+
         <Link
           href="/docs/ui"
-          className="text-fd-foreground font-semibold underline"
+          className="inline-flex items-center justify-center text-sm font-medium ring-offset-fd-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fd-ring disabled:pointer-events-none disabled:opacity-50 border bg-gradient-to-t from-fd-primary/10 shadow-inner shadow-fd-primary/10 hover:bg-fd-accent/50 hover:text-fd-accent-foreground h-11 px-6 rounded-full bg-fd-background/50"
         >
-          /docs/ui
-        </Link>{' '}
-        and see the documentation.
-      </p>
+          Visit now
+        </Link>
+      </motion.div>
+      <div
+        className={cn(
+          "absolute -bottom-14 left-0 z-10",
+          "w-full h-[400px] bg-[size:80px_80px]",
+          "[transform:perspective(300px)_rotateX(50deg)]",
+          "bg-[linear-gradient(90deg,#222_1px,transparent_0),linear-gradient(180deg,#222_1px,transparent_0)]"
+        )}
+      />
     </main>
   );
 }
