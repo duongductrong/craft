@@ -1,5 +1,11 @@
 {
   "title": "ui",
   "root": true,
-  "pages": ["---Get started---", "index", "...", "---Blocks---", "macos-widget"]
+  "pages": [
+    "---Get started---",
+    "index",
+    "fumadocs",
+    "...",
+    "---Blocks---"
+  ]
 }
