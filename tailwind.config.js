@@ -4,6 +4,7 @@ import { createPreset } from 'fumadocs-ui/tailwind-plugin';
 export default {
   content: [
     './components/**/*.{ts,tsx}',
+    './blocks/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './content/**/*.{md,mdx}',
     './mdx-components.{ts,tsx}',
