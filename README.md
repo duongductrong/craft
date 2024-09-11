@@ -1,16 +1,16 @@
 <p align="center">
   <!-- <img src="logo.svg" width="200px" align="center" alt="Zod logo" /> -->
-  <h1 align="center">VOL</h1>
+  <h1 align="center">daniel/craft</h1>
   <p align="center">
-    ✨ <a href="https://github.com/duongductrong/vol">vol.danielll.dev</a> ✨
+    ✨ <a href="https://github.com/duongductrong/craft">craft.danielll.dev</a> ✨
     <br/>
-    Experimental UI blocks
+    Craft is open-source built with Next.js / Fumadocs.
   </p>
 </p>
 
-<!-- <p align="center">
-  <img src="./src/assets/docs/demo.gif" />
-</p> -->
+<p align="center">
+  <img src="./thumbnail.png" />
+</p>
 
 <p align="center">
   <a href="https://github.com/duongductrong" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-@duongductrong-4BBAAB.svg" alt="Created by Dan"></a>

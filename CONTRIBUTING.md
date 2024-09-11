@@ -1,11 +1,11 @@
-# Contributing to Vol
+# Contributing to Craft
 
-Thank you for your interest in contributing to Vol! We welcome contributions from the community and appreciate your help in making our project better.
+Thank you for your interest in contributing to Craft! We welcome contributions from the community and appreciate your help in making our project better.
 
 ## Getting Started
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/duongductrong/vol.git`
+2. Clone your fork: `git clone https://github.com/duongductrong/Craft.git`
 3. Create a new branch: `git checkout -b feature/name`
 
 ## Making Changes
@@ -31,4 +31,4 @@ Nope.
 
 If you find a bug or have a suggestion for improvement, please open an issue on our GitHub repository.
 
-Thank you for contributing to Vol!
+Thank you for contributing to Craft!

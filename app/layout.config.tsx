@@ -1,5 +1,6 @@
 import Logo from "@/components/ui/logo";
 import { type HomeLayoutProps } from "fumadocs-ui/home-layout";
+import { NavChildren } from "./layout.client";
 
 /**
  * Shared layout configurations
@@ -13,15 +14,16 @@ export const baseOptions: HomeLayoutProps = {
     title: (
       <div className="flex items-center gap-2">
         <Logo />
-        <span className="text-sm font-bold">Vol</span>
+        <span className="text-sm font-bold">daniel/craft</span>
       </div>
     ),
+    children: <NavChildren />,
   },
   links: [
-    {
-      text: "UI",
-      url: "/docs/ui",
-      active: "nested-url",
-    },
+    // {
+    //   text: "UI",
+    //   url: "/docs/ui",
+    //   active: "nested-url",
+    // },
   ],
 };
