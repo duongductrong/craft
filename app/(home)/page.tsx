@@ -13,35 +13,46 @@ const protestGuerrilla = Protest_Guerrilla({
 export default function HomePage() {
   return (
     <main className="relative flex h-[calc(100vh-3.5rem)] flex-col justify-center text-center bg-black per overflow-hidden">
-      <div
+      <motion.div
+        initial={{
+          transformPerspective: "300px",
+          rotateX: "-50deg",
+          scaleX: 0,
+        }}
+        animate={{
+          scaleX: 1,
+          transition: {
+            duration: 0.5,
+            stiffness: 200,
+          },
+        }}
         className={cn(
           "absolute -top-14 left-0 z-10",
           "w-full h-[400px] bg-[size:80px_80px]",
-          "[transform:perspective(300px)_rotateX(-50deg)]",
+          // "[transform:perspective(300px)_rotateX(-50deg)]",
           "bg-[linear-gradient(90deg,#222_1px,transparent_0),linear-gradient(180deg,#222_1px,transparent_0)]",
           "border-b border-[#222]"
         )}
       />
       <motion.div
-        className="relative z-20"
-        initial={{ opacity: 0, scale: 0 }}
+        initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          scale: 1,
-          transition: { duration: 0.8, stiffness: 200 },
+          transition: { duration: 1, stiffness: 200 },
         }}
+        className="relative z-20"
       >
-        <h1
+        <motion.h1
           className={cn(
             protestGuerrilla.className,
             "text-[10vw] lg:text-[6.5vw] "
           )}
         >
           {`craft/daniel`}
-        </h1>
-        <p className={cn("font-sans", "text-sm lg:text-base mb-4")}>
+        </motion.h1>
+        <motion.p className={cn("font-sans", "text-sm lg:text-base mb-4")}>
           "Crafting is not just about making things, it's about making meaning."
-        </p>
+        </motion.p>
 
         <Link
           href="/docs/ui"
@@ -50,11 +61,23 @@ export default function HomePage() {
           Visit now
         </Link>
       </motion.div>
-      <div
+      <motion.div
+        initial={{
+          transformPerspective: "300px",
+          rotateX: "50deg",
+          scaleX: 0,
+        }}
+        animate={{
+          scaleX: 1,
+          transition: {
+            duration: 0.5,
+            stiffness: 200,
+          },
+        }}
         className={cn(
           "absolute -bottom-14 left-0 z-10",
           "w-full h-[400px] bg-[size:80px_80px]",
-          "[transform:perspective(300px)_rotateX(50deg)]",
+          // "[transform:perspective(300px)_rotateX(50deg)]",
           "bg-[linear-gradient(90deg,#222_1px,transparent_0),linear-gradient(180deg,#222_1px,transparent_0)]"
         )}
       />
