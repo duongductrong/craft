@@ -12,7 +12,13 @@ const protestGuerrilla = Protest_Guerrilla({
 
 export default function HomePage() {
   return (
-    <main className="relative flex h-[calc(100vh-3.5rem)] flex-col justify-center text-center bg-black per overflow-hidden">
+    <section
+      className={cn(
+        "relative flex h-[calc(100vh-3.5rem)]",
+        "flex-col justify-center text-center",
+        "dark:bg-black bg-fd-background/60 per overflow-hidden"
+      )}
+    >
       <motion.div
         initial={{
           transformPerspective: "300px",
@@ -30,8 +36,9 @@ export default function HomePage() {
           "absolute -top-14 left-0 z-10",
           "w-full h-[400px] bg-[size:80px_80px]",
           // "[transform:perspective(300px)_rotateX(-50deg)]",
-          "bg-[linear-gradient(90deg,#222_1px,transparent_0),linear-gradient(180deg,#222_1px,transparent_0)]",
-          "border-b border-[#222]"
+          "bg-[linear-gradient(90deg,#e6e6e6_1px,transparent_0),linear-gradient(180deg,#e6e6e6_1px,transparent_0)]",
+          "dark:bg-[linear-gradient(90deg,#222_1px,transparent_0),linear-gradient(180deg,#222_1px,transparent_0)]",
+          "border-b dark:border-[#222]"
         )}
       />
       <motion.div
@@ -45,7 +52,7 @@ export default function HomePage() {
         <motion.h1
           className={cn(
             protestGuerrilla.className,
-            "text-[10vw] lg:text-[6.5vw] "
+            "text-[10vw] lg:text-[6.5vw]"
           )}
         >
           {`craft/daniel`}
@@ -56,7 +63,13 @@ export default function HomePage() {
 
         <Link
           href="/docs/ui"
-          className="inline-flex items-center justify-center text-sm font-medium ring-offset-fd-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fd-ring disabled:pointer-events-none disabled:opacity-50 border bg-gradient-to-t from-fd-primary/10 shadow-inner shadow-fd-primary/10 hover:bg-fd-accent/50 hover:text-fd-accent-foreground h-11 px-6 rounded-full bg-fd-background/50"
+          className={cn(
+            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fd-ring",
+            "disabled:pointer-events-none disabled:opacity-50 border",
+            "bg-gradient-to-t from-fd-primary/10 shadow-inner shadow-fd-primary/10",
+            "inline-flex items-center justify-center text-sm font-medium ring-offset-fd-background transition-colors",
+            "hover:bg-fd-accent/50 hover:text-fd-accent-foreground h-11 px-6 rounded-full bg-fd-background/50"
+          )}
         >
           Visit now
         </Link>
@@ -78,9 +91,10 @@ export default function HomePage() {
           "absolute -bottom-14 left-0 z-10",
           "w-full h-[400px] bg-[size:80px_80px]",
           // "[transform:perspective(300px)_rotateX(50deg)]",
-          "bg-[linear-gradient(90deg,#222_1px,transparent_0),linear-gradient(180deg,#222_1px,transparent_0)]"
+          "bg-[linear-gradient(90deg,#e6e6e6_1px,transparent_0),linear-gradient(180deg,#e6e6e6_1px,transparent_0)]",
+          "dark:bg-[linear-gradient(90deg,#222_1px,transparent_0),linear-gradient(180deg,#222_1px,transparent_0)]"
         )}
       />
-    </main>
+    </section>
   );
 }
